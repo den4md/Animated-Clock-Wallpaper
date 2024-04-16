@@ -1,6 +1,6 @@
 # Animated Clock on Customizable Background
 
-<img src="https://i.ibb.co/28kwzbY/win10-stylized-like-win11.gif" alt="Animated example of wallpaper on Windows 10 stylized like Windows 11" width="720px">
+<img src="https://github.com/den4md/Animated-Clock-Wallpaper/assets/50938720/f2a82251-cebf-4d2b-9634-fd2b33350581" alt="Animated example of wallpaper on Windows 10 stylized like Windows 11" width="720px">
 
 This is a personal project aimed at providing a simple animated clock with a customizable (and cool) background. The project leverages JavaScript to create the animated clock functionality.
 
