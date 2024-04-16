@@ -1,0 +1,53 @@
+{
+  "appearance-label": {
+    "type": "label",
+    "value": "Appearance"
+  },
+  "clock-size": {
+    "max": 70,
+    "min": 10,
+    "step": 0.5,
+    "text": "Clock Size",
+    "type": "slider",
+    "value": 40
+  },
+  "bg-image": {
+    "type": "folderDropdown",
+    "value": "win11-grey.jpg",
+    "text": "Background Image",
+    "filter": "*.jpg|*.jpeg|*.png|*.gif|*.gifv|*.webp",
+    "folder": "wallpapers"
+  },
+  "bg-image-extended-height": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Make background image go under taskbar (if it's transparent or acrylic it can be nice)"
+  },
+  "clock-label": {
+    "type": "label",
+    "value": "Clock settings"
+  },
+  "enable-am-pm": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Show clock 12-hour value"
+  },
+  "show-seconds": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Show seconds"
+  },
+  "number-separator": {
+    "type": "textbox",
+    "value": ":",
+    "text": "Character that separates numbers (hours, minutes, seconds)"
+  },
+  "clock-animation-speed": {
+    "max": 950,
+    "min": 50,
+    "step": 50,
+    "text": "Clock's animation speed",
+    "type": "slider",
+    "value": 400
+  }
+}

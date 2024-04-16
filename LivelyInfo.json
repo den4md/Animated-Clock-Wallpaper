@@ -1,0 +1,12 @@
+{
+  "AppVersion": "0.1.0.0",
+  "Title": "Animated Clock",
+  "Thumbnail": "thumbnail.jpg",
+  "Preview": "preview.gif",
+  "Desc": "Animated Clock on a customizable background",
+  "Author": "Den4MD",
+  "License": "MIT",
+  "Contact": "https://github.com/den4md/animated-clock-wallpaper",
+  "Type": 1,
+  "FileName": "index.html"
+}
