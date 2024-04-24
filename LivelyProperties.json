@@ -4,16 +4,16 @@
     "value": "Appearance"
   },
   "clock-size": {
-    "max": 70,
-    "min": 10,
-    "step": 0.5,
+    "max": 150,
+    "min": 5,
+    "step": 1,
     "text": "Clock Size",
     "type": "slider",
     "value": 40
   },
   "bg-image": {
     "type": "folderDropdown",
-    "value": "win11-grey.jpg",
+    "value": "empty.jpg",
     "text": "Background Image",
     "filter": "*.jpg|*.jpeg|*.png|*.gif|*.gifv|*.webp",
     "folder": "wallpapers"

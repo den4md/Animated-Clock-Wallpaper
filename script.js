@@ -11,11 +11,14 @@ const livelyPropertyListener = (name, val) => {
             break;
         case "bg-image":
             // Set the background image of the clock.
-            if (val) {
-                document.getElementsByTagName('body')[0].style.setProperty('--bg-image', `url('${val.replaceAll('\\', '/')}')`);
-            } else {
-                document.getElementsByTagName('body')[0].style.setProperty('--bg-image', 'linear-gradient(135deg, #3498DB, #8E44AD)');
+            if (val && val.replaceAll('\\', '/') !== 'wallpapers/empty.jpg') {
+                document.getElementById('background').style.setProperty('--bg-image', `url('${val.replaceAll('\\', '/')}')`);
+                break;
             }
+            // Intentional fallback to reset
+        case "bg-image-reset":
+            // Reset background image
+            document.getElementById('background').style.setProperty('--bg-image', window.getComputedStyle(document.getElementById('background')).getPropertyValue('--default-bg-image'));
             break;
         case "enable-am-pm":
             // Enable or disable the 12-hour format for the clock.
@@ -31,7 +34,7 @@ const livelyPropertyListener = (name, val) => {
             break;
         case "bg-image-extended-height":
             // Adjust the height of the background image for better fit.
-            document.getElementsByTagName('body')[0].style.setProperty('--bg-image-height', val ? '105%' : '101%');
+            document.getElementById('background').style.setProperty('--bg-image-height', val ? '105%' : '100%');
             break;
         case "clock-animation-speed":
             // Set the animation speed for the clock symbols.
