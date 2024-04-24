@@ -5,9 +5,17 @@
  */
 const livelyPropertyListener = (name, val) => {
     switch(name) {
-        case "clock-size":
-            // Set the font size of the clock symbols.
-            document.getElementsByClassName('symbols')[0].style.setProperty('--font-size', `${val}pt`);
+        case "clock-size-use-absolute":
+            // Set the type of font size - absolute or relative.
+            document.getElementsByClassName('symbols')[0].style.setProperty('--font-size', `var(--font-size-${val ? 'absolute' : 'relative'})`);
+            break;
+        case "clock-size-absolute":
+            // Set the absolute font size of the clock symbols.
+            document.getElementsByClassName('symbols')[0].style.setProperty('--font-size-absolute', `${val}pt`);
+            break;
+        case "clock-size-relative":
+            // Set the relative font size of the clock symbols.
+            document.getElementsByClassName('symbols')[0].style.setProperty('--font-size-relative', `${val}vw`);
             break;
         case "bg-image":
             // Set the background image of the clock.

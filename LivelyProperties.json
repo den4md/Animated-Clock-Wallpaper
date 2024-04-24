@@ -3,13 +3,26 @@
     "type": "label",
     "value": "Appearance"
   },
-  "clock-size": {
+  "clock-size-use-absolute": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Use absolute value for clock size"
+  },
+  "clock-size-absolute": {
     "max": 150,
     "min": 5,
     "step": 1,
-    "text": "Clock Size",
+    "text": "Clock Size (Absolute - always stay the same)",
     "type": "slider",
     "value": 40
+  },
+  "clock-size-relative": {
+    "max": 10,
+    "min": 0.5,
+    "step": 0.1,
+    "text": "Clock Size (Relative - resizes with the window/screen)",
+    "type": "slider",
+    "value": 4
   },
   "bg-image": {
     "type": "folderDropdown",

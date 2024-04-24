@@ -35,7 +35,9 @@ body {
     --shift: 90%;
     --width: 1em;
     --animation-duration: 400ms;
-    --font-size: 40pt;
+    --font-size-absolute: 40pt;
+    --font-size-relative: 4vw;
+    --font-size: var(--font-size-absolute);
 
     font-family: 'Victor Mono', 'Courier New', Courier, monospace;
     font-size: var(--font-size);
