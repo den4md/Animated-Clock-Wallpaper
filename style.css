@@ -6,11 +6,10 @@ body {
 #background {
     --default-bg-image: linear-gradient(135deg, #3498DB, #8E44AD);
     --bg-image: var(--default-bg-image);
-    --bg-image-height: 100%;
     background: var(--bg-image) center/cover no-repeat;
     display: block;
     position: absolute;
-    height: var(--bg-image-height);
+    height: 100%;
     width: 100%;
 }
 

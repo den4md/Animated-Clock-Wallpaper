@@ -40,10 +40,6 @@ const livelyPropertyListener = (name, val) => {
             // Set the separator character for the clock digits.
             NUMBER_SEPARATOR = val.substring(0, 1) || ':';
             break;
-        case "bg-image-extended-height":
-            // Adjust the height of the background image for better fit.
-            document.getElementById('background').style.setProperty('--bg-image-height', val ? '105%' : '100%');
-            break;
         case "clock-animation-speed":
             // Set the animation speed for the clock symbols.
             document.getElementsByClassName('symbols')[0].style.setProperty('--animation-duration', `${val}ms`);

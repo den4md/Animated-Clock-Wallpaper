@@ -31,11 +31,6 @@
     "filter": "*.jpg|*.jpeg|*.png|*.gif|*.gifv|*.webp",
     "folder": "wallpapers"
   },
-  "bg-image-extended-height": {
-    "type": "checkbox",
-    "value": true,
-    "text": "Make background image go under taskbar (if it's transparent or acrylic it can be nice)"
-  },
   "clock-label": {
     "type": "label",
     "value": "Clock settings"
